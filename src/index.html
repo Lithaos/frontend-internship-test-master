@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Lobster&amp;subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.min.css">
-    <title>Virtua Frontend Internship Test</title>
-  </head>
-  <body>
-    <section class="main">
-      <button id="show-popup-form" class="btn btn-main">Click me!</button>
-      <!-- Display success message below -->
-    </section>
-    <div id="popup-form" class="popup invisible">
-        <div id = "exit" class="exit"></div>
-        <form class="center">
-          <h2 class ="font-lobster center">Login</h2>
-          <input type="text" placeholder="E-mail">
-          <input type="password" placeholder="Password">
-          <p>
-              <input type="checkbox" id="test1" />
-              <label for="test1">I agree to terms & conditions.</label>
-            </p>
-          <input id="submit" type="submit" value="SUBMIT">
-        </form>
-    </div>
-    <script src="js/index.js" charset="utf-8"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Lobster&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.min.css">
+  <title>Virtua Frontend Internship Test</title>
+</head>
+
+<body>
+  <section class="main">
+    <button id="show-popup-form" class="btn btn-main">Click me!</button>
+    <!-- Display success message below -->
+  </section>
+  <div id="popup-form" class="popup invisible">
+    <div id="exit" class="exit"></div>
+    <form class="center">
+      <h2 class="font-lobster center">Login</h2>
+      <input id="email" type="text" placeholder="E-mail">
+      <p id="emailError" class="error invisible"></p>
+      <input id="password" type="password" placeholder="Password">
+      <p id="passwordError" class="error invisible"></p>
+      <p>
+        <input type="checkbox" id="terms" value=1 />
+        <label for="terms">I agree to terms & conditions.</label>
+      </p>
+      <input id="submit" type="submit" value="SUBMIT">
+    </form>
+  </div>
+  <script src="js/index.js" charset="utf-8"></script>
+</body>
+
 </html>

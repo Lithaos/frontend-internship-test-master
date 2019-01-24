@@ -15,7 +15,7 @@
     top: 25vh;
     left: 40vw;
     width: 20vw;
-    height: 50vh;
+    height: 55vh;
     background-color: white;
     border-radius: 5px;
 }
@@ -48,11 +48,13 @@ form h2{
     border: 1.5px solid #939393;
     margin: 10px 0;
   }
-  
   input[type=submit]:hover{
     background-color: #fc888e;
   }
-
+  .error{
+    margin: 0;
+    color: red;
+  }
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked {
   position: absolute;
@@ -89,6 +91,7 @@ form h2{
   opacity: 0;
   transform: scale(0);
 }
+
 .exit{
     position: absolute;
     color: white;
